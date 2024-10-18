@@ -14,7 +14,7 @@
 </head>
 <body>
   <!-- Model Viewer -->
-  <model-viewer id="arViewer" src="model1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate></model-viewer>
+  <model-viewer id="arViewer" src="anpanman.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate></model-viewer>
 
   <!-- Buttons to Change Model -->
   <div>
@@ -24,7 +24,7 @@
   </div>
 
   <script>
-    // Function to change the model source in the model-viewer element
+    // model-viewer要素内のモデルソースを変更する関数
     function changeModel(modelUrl) {
       const viewer = document.getElementById('arViewer');
       viewer.src = modelUrl;
