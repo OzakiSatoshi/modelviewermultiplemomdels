@@ -12,16 +12,18 @@
     }
   </style>
 </head>
+<!-- ... existing code ... -->
 <body>
   <!-- Model Viewer -->
   <model-viewer id="arViewer" src="anpanman.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate></model-viewer>
 
   <!-- Buttons to Change Model -->
-  <div>
+  <div id="modelButtons" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);">
     <button onclick="changeModel('anpanman.glb')">アンパンマン</button>
     <button onclick="changeModel('myakumyaku2.glb')">みゃくみゃく</button>
     <button onclick="changeModel('ozaki10000s_ForNamecard.glb')">尾嵜聡</button>
   </div>
+<!-- ... existing code ... -->
 
   <script>
     // model-viewer要素内のモデルソースを変更する関数
